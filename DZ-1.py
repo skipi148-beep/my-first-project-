@@ -34,6 +34,8 @@
  
 # print(best_student.grades)
 
+# Задача №1 Наследование.
+
 class Mentor:
     def __init__(self, name, surname):
         self.name = name
@@ -56,6 +58,8 @@ print(isinstance(lecturer, Mentor)) # True
 print(isinstance(reviewer, Mentor)) # True
 print(lecturer.courses_attached)    # []
 print(reviewer.courses_attached)    # []
+
+# Задание №2 (Атрибуты и взаимодействие классов)
 
 class Student:
     def __init__(self, name, surname, gender):
@@ -116,6 +120,8 @@ print(student.rate_lecture(lecturer, 'C++', 8))      # Ошибка (студе�
 print(student.rate_lecture(reviewer, 'Python', 6))   # Ошибка (reviewer — не лектор)
 
 print(lecturer.grades)  # {'Python': [7]}
+
+# Задание № 3. Полиморфизм и магические методы
 
 class Student:
     def __init__(self, name, surname, gender):
@@ -198,6 +204,8 @@ class Reviewer(Mentor):
 # Пример проверки сравнения:
 # print(student1 > student2) 
 
+# Итоговый код со всеми реализованными методами __str__ и сравнением:
+
 class Student:
     def __init__(self, name, surname, gender):
         self.name = name
@@ -274,6 +282,8 @@ class Reviewer(Mentor):
 
     def __str__(self):
         return f"Имя: {self.name}\nФамилия: {self.surname}"
+
+# Задание № 4. Полевые испытания
 
 class Student:
     def __init__(self, name, surname, gender):
