@@ -692,5 +692,5 @@ lecturer_list = [lecturer_1, lecturer_2]
 
 print("\n--- СРЕДНИЕ БАЛЛЫ ПО КУРСАМ ---")
 print(f"Средний балл студентов по Python: {avg_grade_students(student_list, 'Python'):.1f}")
-print(f"Средний балл лекторов по Python: {avg_grade_lecturers(lecturer_list, 'Python'):.1f}")
+print(f"Средний балл лекторов по Python: {avg_grade_lecturers(lecturer_list, 'Python'):.1f}")  
 
